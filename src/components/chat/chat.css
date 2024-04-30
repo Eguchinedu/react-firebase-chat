@@ -116,6 +116,10 @@
       gap: 20px;
       margin-top: auto;
 
+       &:disabled{
+          cursor: not-allowed;
+        }
+
       .icons {
         display: flex;
         gap: 20px;
@@ -135,9 +139,16 @@
         padding: 20px;
         border-radius: 10px;
         font-size: 16px;
+
+        &:disabled{
+          cursor: not-allowed;
+        }
       }
       .emoji {
         position: relative;
+         &:disabled{
+          cursor: not-allowed;
+        }
         .picker {
           position: absolute;
           bottom: 50px;
@@ -152,6 +163,9 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+         &:disabled{
+          cursor: not-allowed;
+        }
       }
     }
   }
